@@ -54,3 +54,21 @@ test("die Differenz von a und b ist 9", () => {
 
   expect(result).toEqual(9);
 });
+
+test("Das Produkt von 5 mal 6 ist 30", () => {
+  const result = calculator.multiply(5, 6);
+
+  expect(result).toEqual(30);
+});
+
+test("Das Produkt von 5 mal 6 ist -30", () => {
+  const result = calculator.multiply(5, -6);
+
+  expect(result).toEqual(-30);
+});
+
+test("Das Produkt von 5 mal 0 ist 0", () => {
+  const result = calculator.multiply(5, 0);
+
+  expect(result).toEqual(0);
+});
