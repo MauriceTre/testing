@@ -35,3 +35,22 @@ test("Negativ durch negative Zahl ist größer als 0", () => {
 
   expect(result).toBeGreaterThan(0);
 });
+
+
+test("die Differenz von a und b ist 4", () => {
+  const result = calculator.subract(9, 5);
+
+  expect(result).toEqual(4);
+});
+
+test("die Differenz von a und -b ist 44", () => {
+  const result = calculator.subract(9, -5);
+
+  expect(result).toEqual(14);
+});
+
+test("die Differenz von a und b ist 9", () => {
+  const result = calculator.subract(9, 0);
+
+  expect(result).toEqual(9);
+});
