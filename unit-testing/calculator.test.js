@@ -43,7 +43,7 @@ test("die Differenz von a und b ist 4", () => {
   expect(result).toEqual(4);
 });
 
-test("die Differenz von a und -b ist 44", () => {
+test("die Differenz von a und -b ist 14", () => {
   const result = calculator.subract(9, -5);
 
   expect(result).toEqual(14);
