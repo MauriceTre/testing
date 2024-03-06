@@ -14,4 +14,10 @@ describe("Test Basic Math Divide Functions", () => {
     console.log("MY division result", result);
     expect(result).toBe(2);
   });
+
+test("Throws an error when dividing by zero", () => {
+  expect(() => {
+    divideNrs(10, 0);
+  }).toThrow(TypeError);
+});
 });
