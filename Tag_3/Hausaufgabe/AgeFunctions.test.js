@@ -27,6 +27,6 @@ describe("Tests für die isAdult-Funktion", () => {
   });
 
   test("Test für eine negative Eingabe", () => {
-    expect(isAdult(-5)).toBe(false);
+    expect(() => {isAdult(-5)}).toThrow(TypeError)
   });
 });
