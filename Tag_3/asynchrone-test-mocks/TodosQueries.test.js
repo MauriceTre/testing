@@ -51,4 +51,23 @@ describe("Testing GET Functions of Todo Route", () => {
       { params: { todoId: 6 } }
     );
   });
+
+  test("Teste GET ByUserId Funktion", async () => {
+    const myInput = {
+      data: { todos: returnedTodo1 },
+    };
+
+    axios.get.mockResolvedValue(myInput);
+
+    const result = await TodosQueries.fetchTodoByUserId(1);
+
+    expect(result).toEqual(myInput.data.todos);
+    expect(axios.get).toHaveBeenCalledTimes(3);
+    expect(axios.get).toHaveBeenCalledWith(
+      "http://localhost:5050/v1/todos/byuserid",
+      { params: { todoId: 1} }
+    );
+  });
+
+
 });
