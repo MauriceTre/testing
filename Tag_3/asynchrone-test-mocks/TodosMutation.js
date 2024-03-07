@@ -37,6 +37,7 @@ async function updateTodo(updateId, updateTask, updateIsDone, updateDueDate) {
   return todo;
 }
 
+
 async function deleteTodo(todoId) {
   const result = await axios.delete("http://localhost:5050/v1/todos/delete", {
     data: { todoId },
