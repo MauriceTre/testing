@@ -1,6 +1,4 @@
 const { isRightSolutionForQuestion } = require('./Quiz');
-const { isRightSolutionForQuestion } = require('./yourModuleFileName');
-
 describe('isRightSolutionForQuestion function', () => {
   const Fragen = {
     Fragen: [
